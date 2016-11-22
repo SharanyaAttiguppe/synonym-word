@@ -27,8 +27,11 @@
   </configuration>
             <executions>
                 <execution>
-                    <phase>package</phase>
-                    <goals><goal>copy</goal></goals>
+                     <id>war-inplace</id>
+                            <phase>package</phase>
+                            <goals>
+                                <goal>inplace</goal>
+                            </goals>
                     <configuration>
                         <artifactItems>
                             <artifactItem>
